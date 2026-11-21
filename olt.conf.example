@@ -1,0 +1,24 @@
+; Configuração de UMA OLT. Copie para olt1.conf, preencha e proteja: chmod 600 olt1.conf
+; NUNCA publique o arquivo preenchido (o .gitignore já bloqueia *.conf).
+[olt]
+name = olt1                ; prefixo dos arquivos gerados (use um nome por OLT)
+host = IP_OU_HOST_DA_OLT
+port = 23                  ; porta do telnet (ajuste se houver NAT/redirecionamento)
+user = USUARIO_TELNET
+password = SENHA_TELNET
+enable_user = en           ; segundo login (modo privilegiado)
+enable_pass = SENHA_ENABLE
+slots = 11,12              ; placas PON a coletar, separadas por vírgula
+
+[local]
+out_dir = /var/backups/olt-fiberhome   ; pasta onde os arquivos são gravados
+retention_days = 90                    ; apaga arquivos mais antigos (0 = nunca apagar)
+
+; Opcional: enviar os arquivos a um servidor SFTP (exige: pip install paramiko)
+[sftp]
+enabled = no
+host = IP_DO_SFTP
+port = 22
+user = USUARIO_SFTP
+password = SENHA_SFTP
+remote_dir = /pasta/remota/

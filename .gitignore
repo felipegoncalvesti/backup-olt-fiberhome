@@ -1,0 +1,9 @@
+# Segredos e dados de clientes: nunca versionar
+*.conf
+!*.conf.example
+*.txt
+*.xlsx
+*.csv
+*.log
+saida*/
+__pycache__/
