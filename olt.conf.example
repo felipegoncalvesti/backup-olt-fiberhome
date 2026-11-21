@@ -1,5 +1,3 @@
-; Configuração de UMA OLT. Copie para olt1.conf, preencha e proteja: chmod 600 olt1.conf
-; NUNCA publique o arquivo preenchido (o .gitignore já bloqueia *.conf).
 [olt]
 name = olt1                ; prefixo dos arquivos gerados (use um nome por OLT)
 host = IP_OU_HOST_DA_OLT
