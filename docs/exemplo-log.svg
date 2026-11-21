@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 270" font-family="Consolas, 'Courier New', monospace">
+  <rect width="900" height="270" rx="12" fill="#0d1117" stroke="#30363d"/>
+  <circle cx="22" cy="20" r="6" fill="#ff5f56"/><circle cx="44" cy="20" r="6" fill="#ffbd2e"/><circle cx="66" cy="20" r="6" fill="#27c93f"/>
+  <text x="450" y="25" text-anchor="middle" fill="#8b949e" font-size="13">tail -n 12 /var/log/olt-fiberhome.log</text>
+  <g font-size="14" fill="#c9d1d9">
+    <text x="20" y="62"><tspan fill="#8b949e">2026-11-22 02:00:01</tspan> login ok</text>
+    <text x="20" y="86"><tspan fill="#8b949e">2026-11-22 02:00:01</tspan> coletando show startup-config…</text>
+    <text x="20" y="110"><tspan fill="#8b949e">2026-11-22 02:01:27</tspan> startup-config: 14088 linhas</text>
+    <text x="20" y="134"><tspan fill="#8b949e">2026-11-22 02:01:28</tspan> coletando VLAN das ONUs do slot 11…</text>
+    <text x="20" y="158"><tspan fill="#8b949e">2026-11-22 02:01:49</tspan> slot 11: 1453 ONUs com serviço</text>
+    <text x="20" y="182"><tspan fill="#8b949e">2026-11-22 02:02:08</tspan> slot 12: 311 ONUs com serviço</text>
+    <text x="20" y="214"><tspan fill="#8b949e">2026-11-22 02:02:08</tspan> <tspan fill="#3fb950" font-weight="700">OK -&gt;</tspan> …/olt1-config-2026-11-22_0200.txt</text>
+    <text x="20" y="238"><tspan fill="#8b949e">2026-11-22 02:02:08</tspan> <tspan fill="#3fb950" font-weight="700">OK -&gt;</tspan> …/olt1-mapa-onu-vlan-2026-11-22_0200.xlsx (1764 ONUs)</text>
+  </g>
+</svg>

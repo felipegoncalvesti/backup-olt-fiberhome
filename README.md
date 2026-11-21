@@ -1,5 +1,7 @@
 # Backup OLT Fiberhome
 
+![Fluxo do backup: cron → servidor Linux → OLT → arquivos .txt e .xlsx](docs/fluxo.svg)
+
 Script em Python que faz o backup automático de uma OLT **Fiberhome AN5516-06 (RP1400)** via telnet e gera, a cada execução:
 
 - **`.txt`** com a configuração completa (`show startup-config`), em bloco de notas.
@@ -41,9 +43,17 @@ tail -f /var/log/olt-fiberhome.log         # acompanhar ao vivo
 grep ERRO /var/log/olt-fiberhome.log       # só as falhas
 ```
 
+Exemplo de uma execução bem-sucedida:
+
+![Exemplo de log](docs/exemplo-log.svg)
+
 Uma execução boa termina com duas linhas `OK -> ...` (config e mapa). Em falha o script tenta 3 vezes (2 min entre elas) e registra `ERRO (tentativa n/3)`. O agendamento em si aparece em `grep CRON /var/log/syslog` (ou `journalctl -u cron`).
 
 ## Arquivos gerados
+
+Exemplo do mapa ONU × VLAN (dados fictícios):
+
+![Exemplo da planilha ONU x VLAN](docs/exemplo-xlsx.svg)
 
 | Arquivo | Conteúdo |
 |---|---|
